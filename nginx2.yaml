@@ -1,0 +1,12 @@
+version : "3.3"
+services: 
+  web:
+    container_name: "webserver"
+    image: nginx
+    ports: 
+     - "8080:80"
+  db:
+    container_name: "dbserver"
+    image: postgres
+    ports:
+     - "5432:5432"
